@@ -84,6 +84,7 @@ const ContactForm: FC = () => {
               type='email'
               id='email'
               required
+              value={enteredEmail}
               onChange={(e) => setEnteredEmail(e.target.value)}
             />
           </div>
@@ -93,6 +94,7 @@ const ContactForm: FC = () => {
               type='text'
               id='name'
               required
+              value={enteredName}
               onChange={(e) => setEnteredName(e.target.value)}
             />
           </div>
@@ -104,6 +106,7 @@ const ContactForm: FC = () => {
             id='message'
             rows={5}
             required
+            value={enteredMessage}
             onChange={(e) => setEnteredMessage(e.target.value)}
           />
         </div>
